@@ -6,15 +6,16 @@
 </head>
 <body>
 <form action="#" th:action="@{/process}" th:object="${person}" method="post">
-    Name: <input type="hidden" th:field="*{name}" />
+    <input type="hidden" th:field="*{id}"/>
+    Name: <input type="text" th:field="*{name}" />
     <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span><br />
 
-    Email: <input type="hidden" th:field="*{email}" />
+    Email: <input type="text" th:field="*{email}" />
     <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span><br />
-    
-    Phone: <input type="hidden" th:field="*{phone}" />
-    <span th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></span><br />
 
+    Phone: <input type="text" th:field="*{phone}" />
+    <span th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></span><br />
+     <input type="submit" value="Submit"/>
 
 
 
