@@ -1,3 +1,45 @@
 h2 {text-align:center;}
 
 td{width:10%;}
+
+.navbar-custom {
+    background-color:#324F00;
+    color:#A0C562;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#ecf0f1;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #CFEC9D;
+    background-color:#527614;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: darkolivegreen;
+}
+
+.navbar-custom .navbar-brand {
+    color:white;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#ecf0f1;
+}
+.navbar-custom .icon-bar {
+    background-color:#ecf0f1;
+}
+.home {background: url(white-1673016_960_720.jpg)
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}

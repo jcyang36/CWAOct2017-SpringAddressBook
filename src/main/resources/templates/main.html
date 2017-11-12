@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="www.thymeleaf.org">
+<html lang="en">
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta charset="UTF-8"/>
     <title>Title</title>
 </head>
-<body>
+<body class="home">
 <nav class="navbar navbar-custom">
     <div class ="container-fluid">
         <div class="navbar-header">
@@ -20,25 +20,17 @@
                 <a class="navbar-brand">Address Book</a>
             </div>
         </div>
-        <ul class="nav navbar-nav">
-            <li><a href="/main">Home</a></li>
-            <li><a href="/add">Add</a></li>
-            <li><a href="/list">Show</a></li>
-        </ul>
+<ul class="nav navbar-nav">
+    <li><a href="/main">Home</a></li>
+    <li><a href="/add">Add</a></li>
+    <li><a href="/list">Show</a></li>
+</ul>
 
     </div>
 </nav>
-<div class="container">
-<h2> Person Details</h2>
-    <div class="col-md-4"></div>
-<div class="col-md-4 text-center">
-<a href="/list">Show all People</a><br />
-Name: <span th:text="${person.name}"></span><br/>
-Email: <span th:text="${person.email}"></span><br/>
-Phone: <span th:text="${person.phone}"></span><br/>
-<a th:href="@{/delete/{id}(id=${person.id})}">Delete this person</a>
-</div>
-    <div class="col-md-4"></div>
-</div>
+
+<h2>My Address Book</h2>
+
+
 </body>
 </html>
